@@ -13,18 +13,18 @@
 @media only screen and (min-width: 0px) {
 	/* All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
 	:root {
-		--primary: #ff6a3e;
-		--primaryLight: #ffba43;
-		--secondary: #ffba43;
-		--secondaryLight: #ffba43;
-		--headerColor: #1a1a1a;
-		--bodyTextColor: #4e4b66;
-		--bodyTextColorWhite: #fafbfc;
+		--primary: #c84d08;
+		--primaryLight: #ce5f21;
+		--secondary: #202214;
+		--secondaryLight: #495044;
+		--headerColor: #102219;
+		--bodyTextColor: #383726;
+		--bodyTextColorWhite: #f5f4c2;
 
 		/* Dark Mode Styles */
-		--dark: #082032;
-		--medium: #2c394b;
-		--accent: #334756;
+		--dark: #17170f;
+		--medium: #202214;
+		--accent: #495044;
 
 		/* 13px - 16px */
 		--topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -141,7 +141,7 @@
 			content: "";
 			opacity: 1;
 			display: block;
-			background-color: #000;
+			background-color: var(--primaryLight);
 			height: 100%;
 
 			//Transition properties
@@ -468,9 +468,8 @@
 		}
 
 		.cs-logo {
-			width: 40%;
-			max-width: (146/16rem);
-			height: 100%;
+			width: clamp(3rem, 12vw, 3.25rem);
+			height: clamp(3rem, 12vw, 3.25rem);
 			margin: 0 auto 0 0;
 			/* prevents padding and border from affecting height and width */
 			box-sizing: border-box;
@@ -678,8 +677,7 @@
 			background-color: var(--dark);
 
 			.cs-logo {
-				/* makes it white */
-				filter: grayscale(1) brightness(1000%);
+				filter: none;
 			}
 
 			.cs-line {
@@ -991,8 +989,8 @@
 		}
 
 		.cs-logo {
-			width: 18.4%;
-			max-width: (350/16rem);
+			width: (65/16rem);
+			max-width: (65/16rem);
 			height: (65/16rem);
 			/* margin-right auto pushes everything away from it to the right */
 			margin: 0 auto 0 0;
@@ -1073,8 +1071,7 @@
 			background-color: var(--dark);
 
 			.cs-logo {
-				/* makes it turn white */
-				filter: grayscale(1) brightness(1000%);
+				filter: none;
 			}
 
 			.cs-li-link {
@@ -1328,6 +1325,10 @@
 			&.dark {
 				display: none;
 			}
+		}
+
+		.cs-company-logo {
+			max-width: (112/16rem);
 		}
 
 		.cs-text {

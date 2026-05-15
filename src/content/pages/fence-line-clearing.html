@@ -1,0 +1,17 @@
+---
+title: "Fence Line Clearing | Flannel Landworks"
+description: "Fence line clearing service placeholder for Flannel Landworks."
+permalink: "/fence-line-clearing/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/mockup-3-hero.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+    {% set serviceTitle = "Fence Line Clearing" %}
+    {% set serviceUrl = "/fence-line-clearing/" %}
+    {% include "components/service-placeholder.html" %}
+{% endblock %}

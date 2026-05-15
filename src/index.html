@@ -1,5 +1,5 @@
 ---
-title: "Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO"
+title: "Mockup 1 | Flannel Landworks"
 description: "Meta description for the page"
 permalink: "/"
 tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
@@ -11,15 +11,15 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     <!-- Critical styles are loaded first -->
     <link rel="stylesheet" href="/assets/css/critical.css"/>
 
-    <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
+    <!-- If we're in production, defer the rest of the mockup styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
     {% if client.isProduction %}
-        <link rel="preload" href="/assets/css/local.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="/assets/css/mockup-1.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript>
-            <link rel="stylesheet" href="/assets/css/local.css">
+            <link rel="stylesheet" href="/assets/css/mockup-1.css">
         </noscript>
 
     {% else %}
-        <link rel="stylesheet" href="/assets/css/local.css"/>
+        <link rel="stylesheet" href="/assets/css/mockup-1.css"/>
     {% endif %}
 
     <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
@@ -35,36 +35,26 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 
     <section id="hero-143">
         <div class="cs-container">
-            <span class="cs-topper">CodeStitch Presents</span>
+            <span class="cs-topper">Flannel Landworks</span>
             <h1 class="cs-title">
-                The Intermediate Website Kit (LESS)
+                Forestry Mulching and Land Clearing for Residential Acreage
             </h1>
             <p class="cs-text">
-                Building faster websites, faster. Just clone, update _data/client.js, swap out some sections, and away you go!
+                Clear brush, reclaim trails, open fence lines, and get your property back into usable shape.
             </p>
             <a href="/contact/" class="cs-button-solid">Get in Touch</a>
         </div>
 
         <!-- Background Image -->
         <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
-            <!--Large Tablet Image-->
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" alt="kitchen" width="1" height="1" loading="eager" decoding="async">
-        </picture>
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 600, height: 1000 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 600, height: 1000 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 600, height: 1000 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 1920, height: 1000 }) | avif %}" type="image/avif">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 1920, height: 1000 }) | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 1920, height: 1000 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 1920, height: 1000 }) | jpeg %}" alt="land clearing work site" width="1920" height="1000" loading="eager" decoding="async">
+</picture>
     </section>
 
     <!-- ============================================ -->
@@ -78,10 +68,10 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <img loading="lazy" decoding="async" src="/assets/svgs/s1.svg" alt="icon" width="52" height="52" aria-hidden="true">
                 </picture>
                 <h2 class="cs-title">
-                    Full Kitchen Remodel
+                    Forestry Mulching
                 </h2>
                 <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Turn dense brush and saplings into ground-covering mulch.
                 </p>
             </li>
             <li class="cs-item">
@@ -89,10 +79,10 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <img loading="lazy" decoding="async" src="/assets/svgs/s2.svg" alt="icon" width="52" height="52" aria-hidden="true">
                 </picture>
                 <h2 class="cs-title">
-                    Exterior Repairs
+                    Fence Line Clearing
                 </h2>
                 <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Open access along fences, fields, and property lines.
                 </p>
             </li>
             <li class="cs-item">
@@ -100,10 +90,10 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <img loading="lazy" decoding="async" src="/assets/svgs/s3.svg" alt="icon" width="52" height="52" aria-hidden="true">
                 </picture>
                 <h2 class="cs-title">
-                    Utility Maintenance
+                    Field Reclamation
                 </h2>
                 <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Bring overgrown acreage back into manageable shape.
                 </p>
             </li>
             <li class="cs-item">
@@ -111,10 +101,10 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <img loading="lazy" decoding="async" src="/assets/svgs/s4.svg" alt="icon" width="52" height="52" aria-hidden="true">
                 </picture>
                 <h2 class="cs-title">
-                    Design Consultation
+                    Trail Clearing
                 </h2>
                 <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Create usable paths for equipment, hunting, or walking.
                 </p>
             </li>
         </ul>
@@ -129,51 +119,45 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             <!-- Left Image Section -->
             <div class="cs-image-group">
                 <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" loading="lazy" decoding="async">
-                </picture>
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" alt="forestry excavator clearing brush" width="522" height="581" loading="lazy" decoding="async">
+</picture>
                 <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
-                </picture>
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 390, height: 376 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 390, height: 376 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 390, height: 376 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 390, height: 376 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 390, height: 376 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 390, height: 376 }) | jpeg %}" type="image/jpeg">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 390, height: 376 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 390, height: 376 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 390, height: 376 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 390, height: 376 }) | jpeg %}" alt="compact track loader in brush" width="390" height="376" loading="lazy" decoding="async">
+</picture>
             </div>
             <!-- Right Content Section-->
             <div class="cs-content">
                 <span class="cs-topper">About Us</span>
                 <h2 class="cs-title">
-                    About Stitch Law
+                    Residential Acreage Specialist
                 </h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    Flannel Landworks helps homeowners reclaim overgrown land with practical clearing, mulching, and field cleanup services. The goal is simple: make your property easier to access, maintain, and enjoy.
                 </p>
                 <div class="cs-quote">
                     <span class="cs-quote-text">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+                        Free peace of mind quotes for forestry mulching, land clearing, and acreage cleanup.
                     </span>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
+                    <span class="cs-name">Flannel Landworks</span>
+                    <span class="cs-job">Forestry Mulching & Land Clearing</span>
                     <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="gavel" width="136" height="77">
                 </div>
                 <a href="/about/" class="cs-button-solid">About Us</a>
@@ -190,50 +174,38 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             <!-- Left Image Section -->
             <div class="cs-image-group">
                 <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" loading="lazy" decoding="async">
-                </picture>
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" alt="freshly cleared acreage" width="522" height="581" loading="lazy" decoding="async">
+</picture>
                 <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
-                </picture>
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 390, height: 376 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 390, height: 376 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 390, height: 376 }) | jpeg %}" type="image/jpeg">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 390, height: 376 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 390, height: 376 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 390, height: 376 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 390, height: 376 }) | jpeg %}" alt="mini excavator on red clay" width="390" height="376" loading="lazy" decoding="async">
+</picture>
             </div>
             <!-- Right Content Section-->
             <div class="cs-content">
                 <span class="cs-topper">About Us</span>
                 <h2 class="cs-title">
-                    About Stitch Law
+                    Built For Overgrown Residential Land
                 </h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    Flannel Landworks focuses on acreage that needs practical cleanup: brush, saplings, trails, fence lines, field edges, and rough access areas.
                 </p>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    The goal is simple: leave you with land that is easier to see, walk, maintain, and use without turning the whole property into a construction site.
                 </p>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    Every job starts with a clear look at the property and a straightforward plan for what needs to be cut, mulched, opened, or cleaned up.
                 </p>
                 <a href="/about/" class="cs-button-solid">About Us</a>
             </div>
@@ -247,165 +219,138 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     <section id="gallery-48">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Our Portfolio</span>
+                <span class="cs-topper">Our Work</span>
                 <h2 class="cs-title">
-                    Et orci volutpat, back up generator installations
+                    Recent clearing and reclamation work
                 </h2>
             </div>
             <div class="cs-image-group">
                 <div class="cs-row cs-row-1">
                     <!-- Row 1-->
                     <picture class="cs-picture cs-picture-1">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 182, height: 250 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 182, height: 250 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 182, height: 250 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 634, height: 798 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 634, height: 798 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 634, height: 798 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | jpeg %}" alt="new hallway" width="413" height="567" loading="lazy" decoding="async">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 413, height: 567 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 413, height: 567 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 413, height: 567 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 413, height: 567 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 413, height: 567 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 413, height: 567 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 413, height: 567 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 413, height: 567 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 413, height: 567 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 413, height: 567 }) | jpeg %}" alt="cleared timber and logs" width="413" height="567" loading="lazy" decoding="async">
+</picture>
                     <picture class="cs-picture cs-picture-2">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="new home construction" width="413" height="629" loading="lazy" decoding="async">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 413, height: 629 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 413, height: 629 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 413, height: 629 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 413, height: 629 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 413, height: 629 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 413, height: 629 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 413, height: 629 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 413, height: 629 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 413, height: 629 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 413, height: 629 }) | jpeg %}" alt="tractor mulching trees" width="413" height="629" loading="lazy" decoding="async">
+</picture>
                     <picture class="cs-picture cs-picture-3">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 182, height: 226 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 182, height: 226 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 182, height: 226 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 634, height: 720 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 634, height: 720 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 634, height: 720 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | jpeg %}" alt="building a new wall" width="413" height="512" loading="lazy" decoding="async">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 413, height: 512 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 413, height: 512 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 413, height: 512 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 413, height: 512 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 413, height: 512 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 413, height: 512 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 413, height: 512 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 413, height: 512 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 413, height: 512 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 413, height: 512 }) | jpeg %}" alt="excavator clearing brush" width="413" height="512" loading="lazy" decoding="async">
+</picture>
                     <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
                 </div>
                 <!-- Row 2 -->
                 <div class="cs-row cs-row-2">
                     <picture class="cs-picture cs-picture-1">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 182, height: 216 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 182, height: 216 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 182, height: 216 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 634, height: 692 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 634, height: 692 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 634, height: 692 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | jpeg %}" alt="new kitchen" width="413" height="492" loading="lazy" decoding="async">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 413, height: 492 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 413, height: 492 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 413, height: 492 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 413, height: 492 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 413, height: 492 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 413, height: 492 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 413, height: 492 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 413, height: 492 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 413, height: 492 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 413, height: 492 }) | jpeg %}" alt="compact track loader in brush" width="413" height="492" loading="lazy" decoding="async">
+</picture>
                     <picture class="cs-picture cs-picture-2">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 182, height: 228 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 182, height: 228 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 182, height: 228 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 634, height: 728 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 634, height: 728 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 634, height: 728 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | jpeg %}" alt="apartment addition" width="413" height="517" loading="lazy" decoding="async">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 413, height: 517 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 413, height: 517 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 413, height: 517 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 413, height: 517 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 413, height: 517 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 413, height: 517 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 413, height: 517 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 413, height: 517 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 413, height: 517 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 413, height: 517 }) | jpeg %}" alt="freshly cleared acreage" width="413" height="517" loading="lazy" decoding="async">
+</picture>
 
                     <picture class="cs-picture cs-picture-3">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="kew kitchen cabinets" width="413" height="629" loading="lazy" decoding="async">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 413, height: 629 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 413, height: 629 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 413, height: 629 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 413, height: 629 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 413, height: 629 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 413, height: 629 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 413, height: 629 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 413, height: 629 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 413, height: 629 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 413, height: 629 }) | jpeg %}" alt="cleared field and tree line" width="413" height="629" loading="lazy" decoding="async">
+</picture>
 
                     <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
                 </div>
                 <!-- Row 3 -->
                 <div class="cs-row cs-row-3">
                     <picture class="cs-picture cs-picture-1">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 634, height: 880 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 634, height: 880 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 634, height: 880 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | jpeg %}" alt="new black window structure" width="413" height="625" loading="lazy" decoding="async">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 413, height: 625 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 413, height: 625 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 413, height: 625 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 413, height: 625 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 413, height: 625 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 413, height: 625 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 413, height: 625 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 413, height: 625 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 413, height: 625 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 413, height: 625 }) | jpeg %}" alt="mini excavator on red clay" width="413" height="625" loading="lazy" decoding="async">
+</picture>
                     <picture class="cs-picture cs-picture-2">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 182, height: 198 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 182, height: 198 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 182, height: 198 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 634, height: 636 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 634, height: 636 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 634, height: 636 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | jpeg %}" alt="kitchen rebovation" width="413" height="452" loading="lazy" decoding="async">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 413, height: 452 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 413, height: 452 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 413, height: 452 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 413, height: 452 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 413, height: 452 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 413, height: 452 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 413, height: 452 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 413, height: 452 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 413, height: 452 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 413, height: 452 }) | jpeg %}" alt="large excavator on dirt site" width="413" height="452" loading="lazy" decoding="async">
+</picture>
 
                     <picture class="cs-picture cs-picture-3">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="bathroom renovation" width="413" height="629" loading="lazy" decoding="async">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 413, height: 629 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 413, height: 629 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 413, height: 629 }) | jpeg %}" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 413, height: 629 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 413, height: 629 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 413, height: 629 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 413, height: 629 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 413, height: 629 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 413, height: 629 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 413, height: 629 }) | jpeg %}" alt="excavator working near trees" width="413" height="629" loading="lazy" decoding="async">
+</picture>
 
                     <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
                 </div>
             </div>
-            <a href="/project-one/" class="cs-button-solid">View a Project</a>
+            <a href="/project-one/" class="cs-button-solid">View Projects</a>
         </div>
     </section>
 
@@ -418,10 +363,10 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             <div class="cs-content">
                 <span class="cs-topper">Our Reviews</span>
                 <h2 class="cs-title">
-                    Words From Our Customers
+                    Property Owners Trust Flannel Landworks
                 </h2>
                 <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
+                    Straight answers, clean work, and acreage that is easier to maintain when the job is done.
                 </p>
             </div>
             <ul class="cs-card-group">
@@ -429,12 +374,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, debitis!
+                        Our fence line had disappeared under brush. Flannel Landworks opened it back up and left the area clean enough to maintain.
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
+                            <span class="cs-name">Mark R.</span>
+                            <span class="cs-desc">Fence Line Clearing</span>
                         </div>
                         <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
                     </div>
@@ -443,12 +388,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                        They helped us reclaim an overgrown section behind the house. It looks better, drains better, and we can finally walk it again.
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
+                            <span class="cs-name">Sarah K.</span>
+                            <span class="cs-desc">Acreage Cleanup</span>
                         </div>
                         <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
                     </div>

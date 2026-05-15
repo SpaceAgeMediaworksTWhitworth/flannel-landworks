@@ -1,0 +1,17 @@
+---
+title: "Gallery | Flannel Landworks"
+description: "Gallery placeholder for Flannel Landworks."
+permalink: "/gallery/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/mockup-3-hero.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+    {% set serviceTitle = "Gallery" %}
+    {% set serviceUrl = "/gallery/" %}
+    {% include "components/service-placeholder.html" %}
+{% endblock %}

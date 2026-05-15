@@ -1,0 +1,419 @@
+---
+title: "Mockup 3 | Flannel Landworks"
+description: "Homepage mockup 3"
+permalink: "/mockup-3/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/mockup-3.css">
+{% endblock %}
+
+{% block body %}
+   
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-445">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-tag">Residential Acreage Specialist</span>
+            <h1 class="cs-title">Take back your land with forestry mulching and clearing that lasts.</h1>
+            <p class="cs-text">
+                Flannel Landworks clears overgrown acreage, brush, fence lines, trails, and food plots with practical equipment and a clean finish.
+            </p>
+        </div>
+        <a href="" class="cs-cta">
+            <!--Arrow Right-->
+            <svg class="cs-arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill="#FAFBFC" d="M24.55 31.367c-.317 0-.633-.117-.883-.367a1.258 1.258 0 0 1 0-1.767L32.9 20l-9.233-9.233a1.258 1.258 0 0 1 0-1.767 1.258 1.258 0 0 1 1.766 0L35.55 19.117a1.258 1.258 0 0 1 0 1.766L25.433 31c-.25.25-.566.367-.883.367Z"/><path fill="#FAFBFC" d="M34.383 21.25H6.333A1.26 1.26 0 0 1 5.083 20c0-.683.567-1.25 1.25-1.25h28.05c.684 0 1.25.567 1.25 1.25a1.26 1.26 0 0 1-1.25 1.25Z"/></svg>
+            <!--Wrapped in a span so it can be animated-->
+            <span class="cs-cta-text">Get Free<br> Quote</span>
+        </a>
+        <!--Stats Section-->
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-number">8+</span>
+                <span class="cs-desc">Acreage services for rural properties</span>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">1</span>
+                <span class="cs-desc">Crew focused on clear communication</span>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">Local</span>
+                <span class="cs-desc">Land clearing help for homeowners</span>
+            </li>
+        </ul>
+    </div>
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 600, height: 1000 }) | avif %}" type="image/avif">
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 600, height: 1000 }) | webp %}" type="image/webp">
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 600, height: 1000 }) | jpeg %}" type="image/jpeg">
+        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 1920, height: 1000 }) | avif %}" type="image/avif">
+        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 1920, height: 1000 }) | webp %}" type="image/webp">
+        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 1920, height: 1000 }) | jpeg %}" type="image/jpeg">
+        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 1920, height: 1000 }) | jpeg %}" alt="land clearing work site" width="1920" height="1000" aria-hidden="true">
+</picture>
+</section>
+                 
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-2287">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">Land clearing services for acreage that needs room to breathe</h2>
+            <p class="cs-text">
+                From dense brush to neglected field edges, we help open up usable space while keeping the property practical, accessible, and easier to maintain.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/cs-stock/buildstitch-s1.svg" alt="car" width="48" height="48">
+                    </picture>
+                    <h3 class="cs-h3">Forestry Mulching</h3>
+                    <p class="cs-item-text">
+                        Grind brush, saplings, and overgrowth into mulch without hauling material off-site.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/cs-stock/buildstitch-s2.svg" alt="car" width="48" height="48">
+                    </picture>
+                    <h3 class="cs-h3">Fence Line Clearing</h3>
+                    <p class="cs-item-text">
+                        Reclaim access along fences, property lines, and field edges for repair or upkeep.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/cs-stock/buildstitch-s3.svg" alt="car" width="48" height="48">
+                    </picture>
+                    <h3 class="cs-h3">Land Clearing</h3>
+                    <p class="cs-item-text">
+                        Clear problem areas so your acreage is safer, cleaner, and easier to use.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/cs-stock/buildstitch-s4.svg" alt="car" width="48" height="48">
+                    </picture>
+                    <h3 class="cs-h3">Field Reclamation</h3>
+                    <p class="cs-item-text">
+                        Bring neglected pasture, field edges, and open ground back into manageable shape.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/cs-stock/buildstitch-s4.svg" alt="car" width="48" height="48">
+                    </picture>
+                    <h3 class="cs-h3">Trail Clearing</h3>
+                    <p class="cs-item-text">
+                        Open access routes for walking, equipment, hunting, or routine property checks.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/cs-stock/buildstitch-s5.svg" alt="car" width="48" height="48">
+                    </picture>
+                    <h3 class="cs-h3">Food Plot Prep</h3>
+                    <p class="cs-item-text">
+                        Clear and prepare areas for wildlife plots, access lanes, and seasonal use.
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <img class="cs-floater cs-floater-left" src="/assets/images/cs-stock/construction-plant.png" alt="plant" width="264" height="502" loading="lazy" decoding="async" aria-hidden="true">
+    <img class="cs-floater cs-floater-right" src="/assets/images/cs-stock/construction-plant.png" alt="plant" width="264" height="502" loading="lazy" decoding="async" aria-hidden="true">
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="RPsbs-464">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 551 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 551 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 551 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 551 }) | avif %}" type="image/avif">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 551 }) | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 551 }) | jpeg %}" type="image/jpeg">
+            <img aria-hidden="true" loading="lazy" decoding="async" src="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 551 }) | jpeg %}" alt="forestry excavator clearing brush" width="522" height="551">
+</picture>
+        <div class="cs-content">
+            <span class="cs-topper">Featured Service</span>
+            <h2 class="cs-title">Forestry mulching for cleaner, more usable acreage</h2>
+            <p class="cs-text">
+                Forestry mulching is a practical way to knock back brush, small trees, and invasive growth while leaving the ground covered with natural mulch. It is a strong fit for homeowners who want access, visibility, and a cleaner property without a full excavation project.
+            </p>
+            <a href="" class="cs-button-solid">Learn More</a>
+        </div>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--            Side By Side Reverse              -->
+<!-- ============================================ -->
+
+<section id="RPsbsr-464">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 522, height: 551 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 522, height: 551 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 522, height: 551 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 522, height: 551 }) | avif %}" type="image/avif">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 522, height: 551 }) | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 522, height: 551 }) | jpeg %}" type="image/jpeg">
+            <img aria-hidden="true" loading="lazy" decoding="async" src="{% getUrl '/assets/images/stock/pexels-introspectivedsgn-9459174.jpg' | resize({ width: 522, height: 551 }) | jpeg %}" alt="excavator working near trees" width="522" height="551">
+</picture>
+        <div class="cs-content">
+            <span class="cs-topper">Property Access</span>
+            <h2 class="cs-title">Fence lines, trails, and field edges opened back up</h2>
+            <p class="cs-text">
+                Overgrowth makes it hard to inspect fences, reach back acreage, and maintain the land you already own. We clear the trouble spots so you can move around the property with less frustration.
+            </p>
+            <a href="" class="cs-button-solid">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-1897">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Gallery</span>
+                <h2 class="cs-title">Before and after views from real land clearing work</h2>
+            </div>
+            <a class="cs-button-solid" href="">View All</a>
+        </div>
+        <!--Gallery-->
+        <div class="cs-gallery">
+            <div class="cs-item">
+                <p class="cs-item-text">Brush removal that opens sightlines and access</p>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" alt="cleared timber and logs" width="305" height="400">
+</picture>
+                    <span class="cs-tag">Before</span>
+                </div>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/stock/pexels-ivars-31238872.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" alt="tractor mulching trees" width="305" height="400">
+</picture>
+                    <span class="cs-tag">After</span>
+                </div>
+            </div>
+            <div class="cs-item">
+                <p class="cs-item-text">Mulching work around trees and dense growth</p>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" alt="excavator in a wooded work area" width="305" height="400">
+</picture>
+                    <span class="cs-tag">Before</span>
+                </div>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" alt="compact track loader in brush" width="305" height="400">
+</picture>
+                    <span class="cs-tag">After</span>
+                </div>
+            </div>
+            <div class="cs-item">
+                <p class="cs-item-text">Field reclamation for easier long-term upkeep</p>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402522.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" alt="freshly cleared acreage" width="305" height="400">
+</picture>
+                    <span class="cs-tag">Before</span>
+                </div>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" alt="cleared field and tree line" width="305" height="400">
+</picture>
+                    <span class="cs-tag">After</span>
+                </div>
+            </div>
+            <div class="cs-item">
+                <p class="cs-item-text">Equipment access for tough clearing projects</p>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" alt="mini excavator on red clay" width="305" height="400">
+</picture>
+                    <span class="cs-tag">Before</span>
+                </div>
+                <div class="cs-picture-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 305, height: 400 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 305, height: 400 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg' | resize({ width: 305, height: 400 }) | jpeg %}" alt="large excavator on a dirt site" width="305" height="400">
+</picture>
+                    <span class="cs-tag">After</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+          
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="reviews-2354">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">What property owners say about working with Flannel Landworks</h2>
+        </div>                  
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-featured">“The property finally feels usable again.”</span>
+                <p class="cs-item-text">
+                    We had brush taking over the back half of our acreage. Flannel Landworks cleared it out, opened the trails, and left everything much easier to maintain.
+                </p>
+                <div class="cs-info">
+                    <picture class="cs-profile-wrapper">
+                        <source srcset="{% getUrl '/assets/images/cs-stock/profile1.jpg' | resize({ width: 52, height: 52 }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl '/assets/images/cs-stock/profile1.jpg' | resize({ width: 52, height: 52 }) | webp %}" type="image/webp">
+                        <source srcset="{% getUrl '/assets/images/cs-stock/profile1.jpg' | resize({ width: 52, height: 52 }) | jpeg %}" type="image/jpeg">
+                        <img class="cs-profile" loading="lazy" decoding="async" src="{% getUrl '/assets/images/cs-stock/profile1.jpg' | resize({ width: 52, height: 52 }) | jpeg %}" alt="person" width="52" height="52">
+</picture>
+                    <span class="cs-name">
+                        Local Homeowner
+                        <span class="cs-desc">Acreage Owner</span>
+                    </span>
+                </div>
+                <img class="cs-quote" loading="lazy" decoding="async" src="/assets/images/cs-stock/quote-orange.svg" alt="quote" width="86" height="69">
+            </li>
+            <li class="cs-item">
+                <span class="cs-featured">“Clear communication and solid work.”</span>
+                <p class="cs-item-text">
+                    The job was straightforward from the first call. They listened to what we needed, cleaned up the overgrowth, and made our fence line accessible again.
+                </p>
+                <div class="cs-info">
+                    <picture class="cs-profile-wrapper">
+                        <source srcset="{% getUrl '/assets/images/cs-stock/profile1.jpg' | resize({ width: 52, height: 52 }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl '/assets/images/cs-stock/profile1.jpg' | resize({ width: 52, height: 52 }) | webp %}" type="image/webp">
+                        <source srcset="{% getUrl '/assets/images/cs-stock/profile1.jpg' | resize({ width: 52, height: 52 }) | jpeg %}" type="image/jpeg">
+                        <img class="cs-profile" loading="lazy" decoding="async" src="{% getUrl '/assets/images/cs-stock/profile1.jpg' | resize({ width: 52, height: 52 }) | jpeg %}" alt="person" width="52" height="52">
+</picture>
+                    <span class="cs-name">
+                        Rural Property Owner
+                        <span class="cs-desc">Fence Line Clearing</span>
+                    </span>
+                </div>
+                <img class="cs-quote" loading="lazy" decoding="async" src="/assets/images/cs-stock/quote-orange.svg" alt="quote" width="86" height="69">
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 600, height: 636 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 600, height: 636 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 600, height: 636 }) | jpeg %}" type="image/jpeg">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 955, height: 636 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 955, height: 636 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 955, height: 636 }) | jpeg %}" type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/stock/pexels-caocao1211967-13402523.jpg' | resize({ width: 955, height: 636 }) | jpeg %}" alt="cleared land and tree line" width="955" height="636">
+</picture>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-52">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Ready to take back your land?</h2>
+            <p class="cs-text">
+                Tell us what is overgrown, what needs access, and what you want the property to look like when the work is done.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get A Free Quote</a>
+        </div>
+        <!-- Background Image-->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 600, height: 1280 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 600, height: 1280 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 600, height: 1280 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 1920, height: 1280 }) | avif %}" type="image/avif">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 1920, height: 1280 }) | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 1920, height: 1280 }) | jpeg %}" type="image/jpeg">
+            <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg' | resize({ width: 1920, height: 1280 }) | jpeg %}" alt="compact loader clearing brush" width="1920" height="1280" aria-hidden="true">
+</picture>
+    </div>
+</section>
+                                
+{% endblock %}

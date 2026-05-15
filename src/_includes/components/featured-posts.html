@@ -9,8 +9,11 @@
         {%- for post in collections.featured | reverse -%}
             <a class="cs-sidebar-link" href="{{ post.url }}">
                 <picture class="cs-sidebar-img">
+                    <source srcset="{% getUrl post.data.image | resize({ width: 60, height: 60 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl post.data.image | resize({ width: 60, height: 60 }) | webp %}" type="image/webp">
+                    <source srcset="{% getUrl post.data.image | resize({ width: 60, height: 60 }) | jpeg %}" type="image/jpeg">
                     <img src="{% getUrl post.data.image | resize({ width: 120, height: 120 }) | jpeg %}" alt="{{ post.data.alt }}" width="60" height="60" loading="lazy" decoding="async">
-                </picture>
+</picture>
                 <div class="cs-content-group">
                     <h3 class="cs-sidebar-title">{{ post.data.title }}</h3>
                     <span class="cs-sidebar-date">{{ post.date | postDate }}</span>

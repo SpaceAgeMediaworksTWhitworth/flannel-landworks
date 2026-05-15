@@ -1,0 +1,17 @@
+---
+title: "Brush Clearing | Flannel Landworks"
+description: "Brush clearing service placeholder for Flannel Landworks."
+permalink: "/brush-clearing/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/mockup-3-hero.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+    {% set serviceTitle = "Brush Clearing" %}
+    {% set serviceUrl = "/brush-clearing/" %}
+    {% include "components/service-placeholder.html" %}
+{% endblock %}

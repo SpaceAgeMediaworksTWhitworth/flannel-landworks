@@ -57,58 +57,94 @@ permalink: "/project-one/"
                 <div class="cs-row cs-row-1">
                     <!-- Row 1-->
                     <picture class="cs-picture cs-picture-1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" width="420" height="567">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port1.jpg' | resize({ width: 420, height: 567 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port1.jpg' | resize({ width: 420, height: 567 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port1.jpg' | resize({ width: 420, height: 567 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port1.jpg' | resize({ width: 420, height: 567 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port1.jpg' | resize({ width: 420, height: 567 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port1.jpg' | resize({ width: 420, height: 567 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/port1.jpg' | resize({ width: 420, height: 567 }) | jpeg %}" alt="new hallway" width="420" height="567">
+</picture>
                     <picture class="cs-picture cs-picture-2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" width="420" height="630">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port4.jpg' | resize({ width: 420, height: 630 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port4.jpg' | resize({ width: 420, height: 630 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port4.jpg' | resize({ width: 420, height: 630 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port4.jpg' | resize({ width: 420, height: 630 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port4.jpg' | resize({ width: 420, height: 630 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port4.jpg' | resize({ width: 420, height: 630 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/port4.jpg' | resize({ width: 420, height: 630 }) | jpeg %}" alt="new home construction" width="420" height="630">
+</picture>
                     <picture class="cs-picture cs-picture-3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" width="420" height="512">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port7.jpg' | resize({ width: 420, height: 512 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port7.jpg' | resize({ width: 420, height: 512 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port7.jpg' | resize({ width: 420, height: 512 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port7.jpg' | resize({ width: 420, height: 512 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port7.jpg' | resize({ width: 420, height: 512 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port7.jpg' | resize({ width: 420, height: 512 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/port7.jpg' | resize({ width: 420, height: 512 }) | jpeg %}" alt="building a new wall" width="420" height="512">
+</picture>
                     <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
                 </div>
                 <!-- Row 2 -->
                 <div class="cs-row cs-row-2">
                     <picture class="cs-picture cs-picture-1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" width="420" height="492">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port2.jpg' | resize({ width: 420, height: 492 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port2.jpg' | resize({ width: 420, height: 492 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port2.jpg' | resize({ width: 420, height: 492 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port2.jpg' | resize({ width: 420, height: 492 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port2.jpg' | resize({ width: 420, height: 492 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port2.jpg' | resize({ width: 420, height: 492 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/port2.jpg' | resize({ width: 420, height: 492 }) | jpeg %}" alt="new kitchen" width="420" height="492">
+</picture>
                     <picture class="cs-picture cs-picture-2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" width="420" height="517">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port5.jpg' | resize({ width: 420, height: 517 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port5.jpg' | resize({ width: 420, height: 517 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port5.jpg' | resize({ width: 420, height: 517 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port5.jpg' | resize({ width: 420, height: 517 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port5.jpg' | resize({ width: 420, height: 517 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port5.jpg' | resize({ width: 420, height: 517 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/port5.jpg' | resize({ width: 420, height: 517 }) | jpeg %}" alt="apartment addition" width="420" height="517">
+</picture>
                     <picture class="cs-picture cs-picture-3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" width="420" height="629">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port8.jpg' | resize({ width: 420, height: 629 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port8.jpg' | resize({ width: 420, height: 629 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port8.jpg' | resize({ width: 420, height: 629 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port8.jpg' | resize({ width: 420, height: 629 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port8.jpg' | resize({ width: 420, height: 629 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port8.jpg' | resize({ width: 420, height: 629 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/port8.jpg' | resize({ width: 420, height: 629 }) | jpeg %}" alt="kew kitchen cabinets" width="420" height="629">
+</picture>
                     <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
                 </div>
                 <!-- Row 3 -->
                 <div class="cs-row cs-row-3">
                     <picture class="cs-picture cs-picture-1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new black window structure" width="420" height="625">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port3.jpg' | resize({ width: 420, height: 625 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port3.jpg' | resize({ width: 420, height: 625 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port3.jpg' | resize({ width: 420, height: 625 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port3.jpg' | resize({ width: 420, height: 625 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port3.jpg' | resize({ width: 420, height: 625 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port3.jpg' | resize({ width: 420, height: 625 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/port3.jpg' | resize({ width: 420, height: 625 }) | jpeg %}" alt="new black window structure" width="420" height="625">
+</picture>
                     <picture class="cs-picture cs-picture-2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="kitchen rebovation" width="420" height="452">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port6.jpg' | resize({ width: 420, height: 452 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port6.jpg' | resize({ width: 420, height: 452 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port6.jpg' | resize({ width: 420, height: 452 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port6.jpg' | resize({ width: 420, height: 452 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port6.jpg' | resize({ width: 420, height: 452 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port6.jpg' | resize({ width: 420, height: 452 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/port6.jpg' | resize({ width: 420, height: 452 }) | jpeg %}" alt="kitchen rebovation" width="420" height="452">
+</picture>
                     <picture class="cs-picture cs-picture-3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="bathroom renovation" width="420" height="629">
-                    </picture>
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port9.jpg' | resize({ width: 420, height: 629 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port9.jpg' | resize({ width: 420, height: 629 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/port9.jpg' | resize({ width: 420, height: 629 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port9.jpg' | resize({ width: 420, height: 629 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port9.jpg' | resize({ width: 420, height: 629 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/port9.jpg' | resize({ width: 420, height: 629 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/port9.jpg' | resize({ width: 420, height: 629 }) | jpeg %}" alt="bathroom renovation" width="420" height="629">
+</picture>
                     <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
                 </div>
             </div>

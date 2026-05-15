@@ -5,8 +5,8 @@
 <header id="cs-navigation">
     <div class="cs-container">
         <!--Nav Logo-->
-        <a href="/" class="cs-logo" aria-label="Company Name Home page">
-            <img src="/assets/svgs/logo-black.svg" alt="" width="210" height="29" aria-hidden="true" decoding="async">
+        <a href="/" class="cs-logo" aria-label="Flannel Landworks home page">
+            <img src="/assets/logos/old_square_logo.png" alt="" width="1668" height="1662" aria-hidden="true" decoding="async">
         </a>
         <!--Navigation List-->
         <nav class="cs-nav" aria-label="main navigation">
@@ -21,41 +21,66 @@
             <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
             <div class="cs-ul-wrapper" id="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul">
-                    <li class="cs-li">
-                        <a href="/" class="cs-li-link {% if page.url == "/" %} cs-active {% endif %}" {% if page.url == "/" %} aria-current="page" {% endif %}>
+                    <li class="cs-li cs-dropdown">
+                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/" or page.url == "/mockup-2/" or page.url == "/mockup-3/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="home-dropdown-toggle">
                             Home
-                        </a>
+                            <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
+                        </button>
+                        <ul class="cs-drop-ul" aria-labelledby="home-dropdown-toggle">
+                            <li class="cs-drop-li">
+                                <a href="/" class="cs-li-link cs-drop-link" {% if page.url == "/" %} aria-current="page" {% endif %}>Mockup 1</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/mockup-2/" class="cs-li-link cs-drop-link" {% if page.url == "/mockup-2/" %} aria-current="page" {% endif %}>Mockup 2</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/mockup-3/" class="cs-li-link cs-drop-link" {% if page.url == "/mockup-3/" %} aria-current="page" {% endif %}>Mockup 3</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="cs-li">
                         <a href="/about/" class="cs-li-link {% if page.url == "/about/" %} cs-active {% endif %}" {% if page.url == "/about/" %} aria-current="page" {% endif %}>
                             About
                         </a>
                     </li>
+                    <li class="cs-li">
+                        <a href="/gallery/" class="cs-li-link {% if page.url == "/gallery/" %} cs-active {% endif %}" {% if page.url == "/gallery/" %} aria-current="page" {% endif %}>
+                            Gallery
+                        </a>
+                    </li>
                     <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                     <!-- Note: When copying this dropdown, update the id attribute with an appropriate name (e.g., "services-dropdown-toggle", "products-dropdown-toggle") and ensure the aria-labelledby attribute on the ul matches the button's id -->
                     <li class="cs-li cs-dropdown">
-                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/project-one/" or page.url == "/project-two/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="projects-dropdown-toggle">
-                            Projects
+                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/forestry-mulching/" or page.url == "/land-clearing/" or page.url == "/brush-clearing/" or page.url == "/trail-clearing/" or page.url == "/fence-line-clearing/" or page.url == "/field-reclamation/" or page.url == "/food-plot-prep/" or page.url == "/crp-field-compliance/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="services-dropdown-toggle">
+                            Services
                             <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
                         </button>
-                        <ul class="cs-drop-ul" aria-labelledby="projects-dropdown-toggle">
+                        <ul class="cs-drop-ul" aria-labelledby="services-dropdown-toggle">
                             <li class="cs-drop-li">
-                                <a href="/project-one/" class="cs-li-link cs-drop-link">Project One</a>
+                                <a href="/forestry-mulching/" class="cs-li-link cs-drop-link" {% if page.url == "/forestry-mulching/" %} aria-current="page" {% endif %}>Forestry Mulching</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="/project-two/" class="cs-li-link cs-drop-link">Project Two</a>
+                                <a href="/land-clearing/" class="cs-li-link cs-drop-link" {% if page.url == "/land-clearing/" %} aria-current="page" {% endif %}>Land Clearing</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/brush-clearing/" class="cs-li-link cs-drop-link" {% if page.url == "/brush-clearing/" %} aria-current="page" {% endif %}>Brush Clearing</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/trail-clearing/" class="cs-li-link cs-drop-link" {% if page.url == "/trail-clearing/" %} aria-current="page" {% endif %}>Trail Clearing</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/fence-line-clearing/" class="cs-li-link cs-drop-link" {% if page.url == "/fence-line-clearing/" %} aria-current="page" {% endif %}>Fence Line Clearing</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/field-reclamation/" class="cs-li-link cs-drop-link" {% if page.url == "/field-reclamation/" %} aria-current="page" {% endif %}>Field Reclamation</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/food-plot-prep/" class="cs-li-link cs-drop-link" {% if page.url == "/food-plot-prep/" %} aria-current="page" {% endif %}>Food Plot Prep</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/crp-field-compliance/" class="cs-li-link cs-drop-link" {% if page.url == "/crp-field-compliance/" %} aria-current="page" {% endif %}>CRP Field Compliance</a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="cs-li">
-                        <a href="/reviews/" class="cs-li-link {% if page.url == "/reviews/" %} cs-active {% endif %}" {% if page.url == "/reviews/" %} aria-current="page" {% endif %}>
-                            Reviews
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="/blog/" class="cs-li-link {% if page.url == "/blog/" %} cs-active {% endif %}" {% if page.url == "/blog/" %} aria-current="page" {% endif %}>
-                            Blog
-                        </a>
                     </li>
                     <li class="cs-li cs-hide-on-desktop">
                         <a href="/contact/" class="cs-li-link {% if page.url == "/contact/" %} cs-active {% endif %}" {% if page.url == "/contact/" %} aria-current="page" {% endif %}>
