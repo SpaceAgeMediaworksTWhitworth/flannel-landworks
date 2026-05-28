@@ -1,6 +1,6 @@
 ---
-title: "Mockup 1 | Flannel Landworks"
-description: "Meta description for the page"
+title: "Flannel Landworks | Forestry Mulching & Land Clearing"
+description: "Residential forestry mulching, land clearing, brush clearing, fence line clearing, and trail clearing services."
 permalink: "/"
 tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
 ---
@@ -11,15 +11,15 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     <!-- Critical styles are loaded first -->
     <link rel="stylesheet" href="/assets/css/critical.css"/>
 
-    <!-- If we're in production, defer the rest of the mockup styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
+    <!-- If we're in production, defer the rest of the local styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
     {% if client.isProduction %}
-        <link rel="preload" href="/assets/css/mockup-1.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="/assets/css/local.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript>
-            <link rel="stylesheet" href="/assets/css/mockup-1.css">
+            <link rel="stylesheet" href="/assets/css/local.css">
         </noscript>
 
     {% else %}
-        <link rel="stylesheet" href="/assets/css/mockup-1.css"/>
+        <link rel="stylesheet" href="/assets/css/local.css"/>
     {% endif %}
 
     <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
@@ -47,13 +47,13 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 
         <!-- Background Image -->
         <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 600, height: 1000 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 600, height: 1000 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 600, height: 1000 }) | jpeg %}" type="image/jpeg">
-            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 1920, height: 1000 }) | avif %}" type="image/avif">
-            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 1920, height: 1000 }) | webp %}" type="image/webp">
-            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 1920, height: 1000 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl '/assets/images/stock/mockup-3-hero.jpg' | resize({ width: 1920, height: 1000 }) | jpeg %}" alt="land clearing work site" width="1920" height="1000" loading="eager" decoding="async">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/land-clearing-hero.jpg' | resize({ width: 600, height: 1000 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/land-clearing-hero.jpg' | resize({ width: 600, height: 1000 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/land-clearing-hero.jpg' | resize({ width: 600, height: 1000 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/land-clearing-hero.jpg' | resize({ width: 1920, height: 1000 }) | avif %}" type="image/avif">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/land-clearing-hero.jpg' | resize({ width: 1920, height: 1000 }) | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/stock/land-clearing-hero.jpg' | resize({ width: 1920, height: 1000 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl '/assets/images/stock/land-clearing-hero.jpg' | resize({ width: 1920, height: 1000 }) | jpeg %}" alt="land clearing work site" width="1920" height="1000" loading="eager" decoding="async">
 </picture>
     </section>
 
@@ -64,9 +64,6 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     <section id="h-services-143">
         <ul class="cs-card-group">
             <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s1.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
                 <h2 class="cs-title">
                     Forestry Mulching
                 </h2>
@@ -75,9 +72,6 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 </p>
             </li>
             <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s2.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
                 <h2 class="cs-title">
                     Fence Line Clearing
                 </h2>
@@ -86,9 +80,6 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 </p>
             </li>
             <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s3.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
                 <h2 class="cs-title">
                     Field Reclamation
                 </h2>
@@ -97,9 +88,6 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 </p>
             </li>
             <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s4.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
                 <h2 class="cs-title">
                     Trail Clearing
                 </h2>
