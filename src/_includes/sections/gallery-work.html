@@ -1,0 +1,89 @@
+{% set galleryRows = [
+    [
+        {
+            src: "/assets/images/stock/pexels-gizem-gokce-1072613075-34147841.jpg",
+            alt: "cleared timber and logs",
+            height: 567
+        },
+        {
+            src: "/assets/images/stock/pexels-ivars-31238872.jpg",
+            alt: "tractor mulching trees",
+            height: 629
+        },
+        {
+            src: "/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg",
+            alt: "excavator clearing brush",
+            height: 512
+        }
+    ],
+    [
+        {
+            src: "/assets/images/stock/pexels-ryan-latimer-706221573-33941336.jpg",
+            alt: "compact track loader in brush",
+            height: 492
+        },
+        {
+            src: "/assets/images/stock/pexels-caocao1211967-13402522.jpg",
+            alt: "freshly cleared acreage",
+            height: 517
+        },
+        {
+            src: "/assets/images/stock/pexels-caocao1211967-13402523.jpg",
+            alt: "cleared field and tree line",
+            height: 629
+        }
+    ],
+    [
+        {
+            src: "/assets/images/stock/pexels-anjali-paarol-59228898-31001841.jpg",
+            alt: "mini excavator on red clay",
+            height: 625
+        },
+        {
+            src: "/assets/images/stock/pexels-pal-eyes-449744475-15493415.jpg",
+            alt: "large excavator on dirt site",
+            height: 452
+        },
+        {
+            src: "/assets/images/stock/pexels-introspectivedsgn-9459174.jpg",
+            alt: "excavator working near trees",
+            height: 629
+        }
+    ]
+] %}
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-48">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Work</span>
+            <h2 class="cs-title">
+                Recent clearing and reclamation work
+            </h2>
+        </div>
+        <div class="cs-image-group">
+            {% for row in galleryRows %}
+                <div class="cs-row cs-row-{{ loop.index }}">
+                    {% for image in row %}
+                        <picture class="cs-picture cs-picture-{{ loop.index }}">
+                            <source media="(max-width: 600px)" srcset="{% getUrl image.src | resize({ width: 413, height: image.height }) | avif %}" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="{% getUrl image.src | resize({ width: 413, height: image.height }) | webp %}" type="image/webp">
+                            <source media="(max-width: 600px)" srcset="{% getUrl image.src | resize({ width: 413, height: image.height }) | jpeg %}" type="image/jpeg">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl image.src | resize({ width: 413, height: image.height }) | avif %}" type="image/avif">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl image.src | resize({ width: 413, height: image.height }) | webp %}" type="image/webp">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl image.src | resize({ width: 413, height: image.height }) | jpeg %}" type="image/jpeg">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl image.src | resize({ width: 413, height: image.height }) | avif %}" type="image/avif">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl image.src | resize({ width: 413, height: image.height }) | webp %}" type="image/webp">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl image.src | resize({ width: 413, height: image.height }) | jpeg %}" type="image/jpeg">
+                            <img src="{% getUrl image.src | resize({ width: 413, height: image.height }) | jpeg %}" alt="{{ image.alt }}" width="413" height="{{ image.height }}" loading="lazy" decoding="async">
+                        </picture>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+        <a href="/project-one/" class="cs-button-solid">View Projects</a>
+    </div>
+</section>
