@@ -1,0 +1,66 @@
+---
+title: "Land Clearing & Forestry Mulching in New Melle, MO | Flannel Landworks"
+description: "Land clearing and forestry mulching in New Melle, MO for rural residential acreage, brush, trails, field reclamation, and fence lines."
+permalink: "/new-melle/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/land-clearing-hero.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+    {% set serviceTitle = "New Melle" %}
+    {% set serviceUrl = "/new-melle/" %}
+    {% include "components/service-placeholder.html" %}
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="RPsbs-313" class="cs-single-image">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-image-group">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" alt="forestry excavator clearing brush" width="522" height="581" loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">New Melle Land Clearing</span>
+                <h2 class="cs-title">
+                    Reclaim Rural Acreage Around New Melle
+                </h2>
+                <p class="cs-text">
+                    New Melle properties often have the kind of acreage that benefits from practical forestry mulching: wooded edges, field borders, trails, fence rows, and rough ground that has grown in over time.
+                </p>
+                <p class="cs-text">
+                    Flannel Landworks helps landowners open those areas back up so they can be walked, maintained, inspected, or prepared for the next use.
+                </p>
+                <p class="cs-text">
+                    With upfront project quotes and clear communication, you know what the clearing will involve before the work begins.
+                </p>
+                <div class="cs-quote">
+                    <span class="cs-quote-text">
+                        For New Melle acreage, clearing work should support how you actually use the land, from trails and fields to access and maintenance.
+                    </span>
+                    <span class="cs-name">Flannel Landworks</span>
+                    <span class="cs-job">St. Charles County Service Area</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="" width="136" height="77" aria-hidden="true">
+                </div>
+                <a href="/contact/" class="cs-button-solid">Request a Peace of Mind Quote</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

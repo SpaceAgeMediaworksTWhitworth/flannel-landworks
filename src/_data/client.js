@@ -4,16 +4,8 @@ module.exports = {
     email: "mark@flannellandworks.com",
     phoneForTel: "6363453724",
     phoneFormatted: "(636) 345-3724",
-    address: {
-        lineOne: "",
-        lineTwo: "",
-        city: "",
-        state: "",
-        zip: "",
-        country: "US",
-        mapLink: "https://share.google/rubBwCP3rOnGXEmMX",
-    },
     socials: {
+        google: "https://share.google/rubBwCP3rOnGXEmMX",
         facebook: "https://www.facebook.com/p/Flannel-Landworks-61582936221785/",
         instagram: "",
         youtube: "",

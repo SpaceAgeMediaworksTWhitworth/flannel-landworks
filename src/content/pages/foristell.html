@@ -1,0 +1,66 @@
+---
+title: "Forestry Mulching & Land Clearing in Foristell, MO | Flannel Landworks"
+description: "Forestry mulching and land clearing in Foristell, MO for residential acreage, field edges, brush clearing, trails, and fence line cleanup."
+permalink: "/foristell/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/land-clearing-hero.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+    {% set serviceTitle = "Foristell" %}
+    {% set serviceUrl = "/foristell/" %}
+    {% include "components/service-placeholder.html" %}
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="RPsbs-313" class="cs-single-image">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-image-group">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" alt="forestry excavator clearing brush" width="522" height="581" loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">Foristell Forestry Mulching</span>
+                <h2 class="cs-title">
+                    Acreage Clearing For Foristell Landowners
+                </h2>
+                <p class="cs-text">
+                    Foristell landowners often deal with larger residential acreage, wooded edges, and rough sections that are hard to keep under control. Flannel Landworks helps reclaim those areas with forestry mulching and land clearing.
+                </p>
+                <p class="cs-text">
+                    We clear brush, saplings, briars, and unwanted growth while keeping the finished use of the property in mind.
+                </p>
+                <p class="cs-text">
+                    Whether you are opening trails, reclaiming a field edge, or improving access along a fence line, we focus on a cleaner result that is easier to maintain.
+                </p>
+                <div class="cs-quote">
+                    <span class="cs-quote-text">
+                        A well-planned Foristell clearing project can make overgrown acreage feel usable again without unnecessary hauling or daily-rate surprises.
+                    </span>
+                    <span class="cs-name">Flannel Landworks</span>
+                    <span class="cs-job">St. Charles County Service Area</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="" width="136" height="77" aria-hidden="true">
+                </div>
+                <a href="/contact/" class="cs-button-solid">Request a Peace of Mind Quote</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

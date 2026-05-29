@@ -1,0 +1,66 @@
+---
+title: "Land Clearing & Forestry Mulching in Wentzville, MO | Flannel Landworks"
+description: "Residential land clearing and forestry mulching in Wentzville, MO for acreage cleanup, brush clearing, trails, field edges, and fence lines."
+permalink: "/wentzville/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/land-clearing-hero.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+    {% set serviceTitle = "Wentzville" %}
+    {% set serviceUrl = "/wentzville/" %}
+    {% include "components/service-placeholder.html" %}
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="RPsbs-313" class="cs-single-image">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-image-group">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" alt="forestry excavator clearing brush" width="522" height="581" loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">Wentzville Land Clearing</span>
+                <h2 class="cs-title">
+                    Acreage Cleanup For Growing Wentzville Properties
+                </h2>
+                <p class="cs-text">
+                    Wentzville has a mix of residential lots, rural edges, and acreage properties where brush can take over quickly. Flannel Landworks helps landowners reclaim those spaces with forestry mulching, brush clearing, and field-edge cleanup.
+                </p>
+                <p class="cs-text">
+                    We clear dense growth, saplings, briars, and rough access areas so the property becomes easier to use, inspect, and maintain.
+                </p>
+                <p class="cs-text">
+                    Each project is quoted upfront and planned around the terrain, access, and finished result you want from the land.
+                </p>
+                <div class="cs-quote">
+                    <span class="cs-quote-text">
+                        For Wentzville acreage, a clean clearing job should create usable land today and easier maintenance tomorrow.
+                    </span>
+                    <span class="cs-name">Flannel Landworks</span>
+                    <span class="cs-job">St. Charles County Service Area</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="" width="136" height="77" aria-hidden="true">
+                </div>
+                <a href="/contact/" class="cs-button-solid">Request a Peace of Mind Quote</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

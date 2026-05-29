@@ -13,7 +13,7 @@
                 Flannel Landworks helps residential acreage owners reclaim unusable land with professional forestry mulching, brush clearing, and land clearing services.
             </p>
             <div class="cs-social">
-                <a class="cs-social-link" aria-label="visit google profile" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
+                <a class="cs-social-link" aria-label="visit google profile" href="{{ client.socials.google }}" target="_blank" rel="noopener">
                     <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="google" width="11" height="11">
                 </a>
                 <a class="cs-social-link" aria-label="visit facebook profile" href="{{ client.socials.facebook }}" target="_blank" rel="noopener">
@@ -75,14 +75,6 @@
         <ul class="cs-contact">
             <li class="cs-nav-li">
                 <span class="cs-header">Contact</span>
-            </li>
-            <li class="cs-contact-li">
-                <a class="cs-contact-link cs-address" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
-                    {{ client.address.lineOne }}, <br>
-                    {{ client.address.lineTwo }}, <br>
-                    {{ client.address.city }}, {{ client.address.state }}
-                    {{ client.address.zip }}
-                </a>
             </li>
             <li class="cs-contact-li">
                 <a class="cs-contact-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>

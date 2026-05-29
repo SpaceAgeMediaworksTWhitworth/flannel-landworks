@@ -1,0 +1,66 @@
+---
+title: "Forestry Mulching & Land Clearing in Western St. Louis County | Flannel Landworks"
+description: "Forestry mulching and land clearing in western St. Louis County for residential acreage, wooded edges, brush, trails, and access cleanup."
+permalink: "/st-louis-county/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/land-clearing-hero.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+    {% set serviceTitle = "St. Louis County (Western Service Area)" %}
+    {% set serviceUrl = "/st-louis-county/" %}
+    {% include "components/service-placeholder.html" %}
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="RPsbs-313" class="cs-single-image">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-image-group">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" alt="forestry excavator clearing brush" width="522" height="581" loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">Western St. Louis County Clearing</span>
+                <h2 class="cs-title">
+                    Selective Clearing For Western St. Louis County Properties
+                </h2>
+                <p class="cs-text">
+                    Western St. Louis County properties can include wooded lots, larger residential parcels, and rough edges where brush limits access and visibility. Flannel Landworks helps clear those areas with a measured, property-focused approach.
+                </p>
+                <p class="cs-text">
+                    Our work is useful for trails, fence lines, wooded transitions, and overgrown sections that need to become easier to inspect or maintain.
+                </p>
+                <p class="cs-text">
+                    We plan clearing around the property layout and the owner's goals, with upfront pricing and clear communication before work begins.
+                </p>
+                <div class="cs-quote">
+                    <span class="cs-quote-text">
+                        In western St. Louis County, the right clearing plan can improve usability while keeping the work focused and controlled.
+                    </span>
+                    <span class="cs-name">Flannel Landworks</span>
+                    <span class="cs-job">St. Louis County Service Area</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="" width="136" height="77" aria-hidden="true">
+                </div>
+                <a href="/contact/" class="cs-button-solid">Request a Peace of Mind Quote</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

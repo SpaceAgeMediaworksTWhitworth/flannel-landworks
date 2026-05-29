@@ -1,0 +1,66 @@
+---
+title: "Forestry Mulching & Brush Clearing in Lake St. Louis, MO | Flannel Landworks"
+description: "Forestry mulching and brush clearing in Lake St. Louis, MO for residential acreage, wooded edges, access paths, and overgrown property areas."
+permalink: "/lake-st-louis/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/land-clearing-hero.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+    {% set serviceTitle = "Lake St. Louis" %}
+    {% set serviceUrl = "/lake-st-louis/" %}
+    {% include "components/service-placeholder.html" %}
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="RPsbs-313" class="cs-single-image">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-image-group">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" alt="forestry excavator clearing brush" width="522" height="581" loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">Lake St. Louis Clearing</span>
+                <h2 class="cs-title">
+                    Cleaner Wooded Edges And Usable Ground In Lake St. Louis
+                </h2>
+                <p class="cs-text">
+                    Lake St. Louis properties can include wooded edges, sloped areas, and back sections that are hard to maintain once brush fills in. Flannel Landworks helps open those areas with practical clearing and mulching.
+                </p>
+                <p class="cs-text">
+                    We focus on improving access and visibility while respecting the shape of the property and avoiding unnecessary disturbance.
+                </p>
+                <p class="cs-text">
+                    From brush reduction to trail access and field-edge cleanup, the work is planned around making the land more usable for the owner.
+                </p>
+                <div class="cs-quote">
+                    <span class="cs-quote-text">
+                        Lake St. Louis landowners can reclaim overgrown edges and hidden ground with clearing work that fits the property instead of overpowering it.
+                    </span>
+                    <span class="cs-name">Flannel Landworks</span>
+                    <span class="cs-job">St. Charles County Service Area</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="" width="136" height="77" aria-hidden="true">
+                </div>
+                <a href="/contact/" class="cs-button-solid">Request a Peace of Mind Quote</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
