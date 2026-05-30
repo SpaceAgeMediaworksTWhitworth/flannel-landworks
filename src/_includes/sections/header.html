@@ -70,6 +70,11 @@
                             Gallery
                         </a>
                     </li>
+                    <li class="cs-li">
+                        <a href="/blog/" class="cs-li-link {% if page.url == "/blog/" or page.url.slice(0, 6) == "/blog/" %} cs-active {% endif %}" {% if page.url == "/blog/" or page.url.slice(0, 6) == "/blog/" %} aria-current="page" {% endif %}>
+                            Blog
+                        </a>
+                    </li>
                     <li class="cs-li cs-hide-on-desktop">
                         <a href="/contact/" class="cs-li-link {% if page.url == "/contact/" %} cs-active {% endif %}" {% if page.url == "/contact/" %} aria-current="page" {% endif %}>
                             Contact
