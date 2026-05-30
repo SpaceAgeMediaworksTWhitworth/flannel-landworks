@@ -7,7 +7,9 @@ permalink: "/troy/"
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/land-clearing-hero.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/land-clearing-hero.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif" media="(max-width: 600px)">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/land-clearing-hero.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif" media="(min-width: 601px) and (max-width: 1023px)">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/land-clearing-hero.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif" media="(min-width: 1024px)">
 {% endblock %}
 
 {% block body %}
