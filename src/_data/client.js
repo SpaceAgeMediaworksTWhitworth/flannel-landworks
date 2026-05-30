@@ -8,7 +8,7 @@ module.exports = {
         google: "https://share.google/rubBwCP3rOnGXEmMX",
         facebook: "https://www.facebook.com/p/Flannel-Landworks-61582936221785/",
         instagram: "",
-        youtube: "",
+        youtube: "https://www.youtube.com/@Flannel-Landworks",
     },
     slogans: [
         "Professional equipment, professional results",
