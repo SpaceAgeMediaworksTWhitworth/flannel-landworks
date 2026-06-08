@@ -76,8 +76,6 @@ function moveDemoPages() {
 		"about.html",
 		"contact.html",
 		"reviews.html",
-		"project-one.html",
-		"project-two.html",
 	];
 
 	let count = 0;
@@ -98,7 +96,6 @@ function moveDemoLess() {
 		"about.less",
 		"contact.less",
 		"reviews.less",
-		"projects.less",
 	];
 
 	let count = 0;
