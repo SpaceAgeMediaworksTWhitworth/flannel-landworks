@@ -21,6 +21,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     {% else %}
         <link rel="stylesheet" href="/assets/css/local.css"/>
     {% endif %}
+    <link rel="stylesheet" href="/assets/css/before-and-afters.css">
 
     <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
     <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
@@ -243,6 +244,50 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     </div>
                 </li>
             </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--              Before And After                -->
+    <!-- ============================================ -->
+
+    <section id="sbs-2295">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <div class="cs-picture-wrapper1">
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-before.png' | resize({ width: 412, height: 457 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-before.png' | resize({ width: 412, height: 457 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-before.png' | resize({ width: 412, height: 457 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-before.png' | resize({ width: 412, height: 457 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-before.png' | resize({ width: 412, height: 457 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-before.png' | resize({ width: 412, height: 457 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/owned/mead-woodline-before.png' | resize({ width: 412, height: 457 }) | jpeg %}" alt="overgrown residential woodline before forestry mulching" width="412" height="457">
+                    </picture>
+                    <span class="cs-tag">Before</span>
+                </div>
+                <div class="cs-picture-wrapper2">
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-after.png' | resize({ width: 413, height: 474 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-after.png' | resize({ width: 413, height: 474 }) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-after.png' | resize({ width: 413, height: 474 }) | jpeg %}" type="image/jpeg">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-after.png' | resize({ width: 413, height: 474 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-after.png' | resize({ width: 413, height: 474 }) | webp %}" type="image/webp">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-after.png' | resize({ width: 413, height: 474 }) | jpeg %}" type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/owned/mead-woodline-after.png' | resize({ width: 413, height: 474 }) | jpeg %}" alt="residential woodline opened after forestry mulching" width="413" height="474">
+                    </picture>
+                    <span class="cs-tag">After</span>
+                </div>
+                <img class="cs-arrow" loading="lazy" decoding="async" src="/assets/images/owned/before-after-arrow.svg" alt="" width="148" height="54">
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Before And After</span>
+                <h2 class="cs-title">See What Reclaimed Land Can Look Like</h2>
+                <p class="cs-text">
+                    Forestry mulching can turn dense, difficult ground into cleaner acreage that is easier to see, walk, maintain, and use.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get A Free Quote</a>
+            </div>
         </div>
     </section>
 

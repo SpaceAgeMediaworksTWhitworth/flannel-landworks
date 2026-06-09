@@ -10,6 +10,7 @@ permalink: "/forestry-mulching/"
     <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/land-clearing-hero.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif" media="(max-width: 600px)">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/land-clearing-hero.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif" media="(min-width: 601px) and (max-width: 1023px)">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/land-clearing-hero.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif" media="(min-width: 1024px)">
+    <link rel="stylesheet" href="/assets/css/before-and-afters.css">
 {% endblock %}
 
 {% block body %}
@@ -17,39 +18,38 @@ permalink: "/forestry-mulching/"
     {% set serviceUrl = "/forestry-mulching/" %}
     {% include "components/service-placeholder.html" %}
 <!-- ============================================ -->
-<!--                 Side By Side                 -->
+<!--              Before And After                -->
 <!-- ============================================ -->
 
-<section id="RPsbs-313">
+<section id="sbs-2295" class="cs-white-background">
     <div class="cs-container">
-        <!-- Left Image Section -->
         <div class="cs-image-group">
-            <picture class="cs-picture cs-picture1">
-                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
-                <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
-                <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" alt="forestry excavator clearing brush" width="522" height="581" loading="lazy" decoding="async">
-            </picture>
-            <picture class="cs-picture cs-picture2">
-                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 390, height: 376 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 390, height: 376 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 390, height: 376 }) | jpeg %}" type="image/jpeg">
-                <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 390, height: 376 }) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 390, height: 376 }) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 390, height: 376 }) | jpeg %}" type="image/jpeg">
-                <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 390, height: 376 }) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 390, height: 376 }) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 390, height: 376 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 390, height: 376 }) | jpeg %}" alt="forestry mulching equipment in the field" width="390" height="376" loading="lazy" decoding="async">
-            </picture>
+            <div class="cs-picture-wrapper1">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-before.png' | resize({ width: 412, height: 457 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-before.png' | resize({ width: 412, height: 457 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-before.png' | resize({ width: 412, height: 457 }) | jpeg %}" type="image/jpeg">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-before.png' | resize({ width: 412, height: 457 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-before.png' | resize({ width: 412, height: 457 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-before.png' | resize({ width: 412, height: 457 }) | jpeg %}" type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/owned/mead-woodline-before.png' | resize({ width: 412, height: 457 }) | jpeg %}" alt="overgrown residential woodline before forestry mulching" width="412" height="457">
+                </picture>
+                <span class="cs-tag">Before</span>
+            </div>
+            <div class="cs-picture-wrapper2">
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-after.png' | resize({ width: 413, height: 474 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-after.png' | resize({ width: 413, height: 474 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-after.png' | resize({ width: 413, height: 474 }) | jpeg %}" type="image/jpeg">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-after.png' | resize({ width: 413, height: 474 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-after.png' | resize({ width: 413, height: 474 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/mead-woodline-after.png' | resize({ width: 413, height: 474 }) | jpeg %}" type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/owned/mead-woodline-after.png' | resize({ width: 413, height: 474 }) | jpeg %}" alt="residential woodline opened after forestry mulching" width="413" height="474">
+                </picture>
+                <span class="cs-tag">After</span>
+            </div>
+            <img class="cs-arrow" loading="lazy" decoding="async" src="/assets/images/owned/before-after-arrow.svg" alt="" width="148" height="54">
         </div>
-        <!-- Right Content Section-->
         <div class="cs-content">
             <span class="cs-topper">Forestry Mulching</span>
             <h2 class="cs-title">
