@@ -1,5 +1,5 @@
 ---
-title: "Brush Clearing for Homeowners: When Overgrowth Becomes a Property Problem"
+title: "Brush Clearing for Homeowners: When to Clear Overgrowth"
 url: brush-clearing-for-homeowners
 description: "Brush clearing helps homeowners reclaim overgrown areas, improve access, reduce maintenance headaches, and make acreage easier to use."
 author: Flannel Landworks

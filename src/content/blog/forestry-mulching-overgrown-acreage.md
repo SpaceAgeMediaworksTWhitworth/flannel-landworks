@@ -1,5 +1,5 @@
 ---
-title: "Forestry Mulching for Overgrown Acreage: What Homeowners Should Know"
+title: "Forestry Mulching for Overgrown Residential Acreage"
 url: forestry-mulching-overgrown-acreage
 description: "Learn how forestry mulching helps homeowners reclaim overgrown acreage, clear brush, reduce hauling, and leave land easier to maintain."
 author: Flannel Landworks
