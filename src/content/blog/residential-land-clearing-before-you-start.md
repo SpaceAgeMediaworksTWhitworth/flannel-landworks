@@ -8,7 +8,7 @@ tags:
     - post
     - featured
 image: /assets/images/blog/residential-land-clearing-before-you-start.png
-imageAlt: Freshly cleared acreage ready for residential property maintenance
+imageAlt: Residential acreage after professional land clearing
 ---
 
 Residential land clearing sounds simple until you walk the property and start making decisions. What should stay? What should go? Where does the equipment enter? How clean does the finished area need to be? What will you do with the land after it is opened up?

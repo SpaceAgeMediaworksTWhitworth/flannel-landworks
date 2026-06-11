@@ -8,7 +8,7 @@ tags:
     - post
     - featured
 image: /assets/images/blog/brush-clearing-for-homeowners.png
-imageAlt: Compact track loader clearing thick brush on residential acreage
+imageAlt: Compact track loader performing residential brush clearing
 ---
 
 Brush usually does not take over all at once. It starts along a fence line, behind a shed, at the edge of a field, or in a patch of woods that has not been touched in a few seasons. Then briars, honeysuckle, saplings, and invasive growth make the area harder to walk, mow, or even see through.

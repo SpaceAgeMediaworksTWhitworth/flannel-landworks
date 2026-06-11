@@ -8,7 +8,7 @@ tags:
     - post
     - featured
 image: /assets/images/blog/forestry-mulching-overgrown-acreage.png
-imageAlt: Forestry mulcher clearing overgrown residential acreage
+imageAlt: Forestry mulcher reclaiming overgrown residential acreage
 ---
 
 Overgrown acreage can turn into a problem slowly. A field edge gets rough. Honeysuckle fills in the tree line. Saplings take over a corner that used to be easy to walk. Before long, the land is hard to see, hard to mow, and hard to use.
