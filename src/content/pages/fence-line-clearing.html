@@ -7,9 +7,9 @@ permalink: "/fence-line-clearing/"
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/land-clearing-hero.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif" media="(max-width: 600px)">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/land-clearing-hero.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif" media="(min-width: 601px) and (max-width: 1023px)">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/stock/land-clearing-hero.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif" media="(min-width: 1024px)">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/new/Snapshot.PNG" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif" media="(max-width: 600px)">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/new/Snapshot.PNG" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif" media="(min-width: 601px) and (max-width: 1023px)">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/new/Snapshot.PNG" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif" media="(min-width: 1024px)">
 {% endblock %}
 
 {% block body %}
@@ -17,38 +17,17 @@ permalink: "/fence-line-clearing/"
     {% set serviceUrl = "/fence-line-clearing/" %}
     {% include "components/service-placeholder.html" %}
 <!-- ============================================ -->
-<!--                 Side By Side                 -->
+<!--              Before And After                -->
 <!-- ============================================ -->
 
-<section id="RPsbs-313">
+{% set beforeImage = "/assets/images/new/foley-fence-line-before.png" %}
+{% set afterImage = "/assets/images/new/foley-fence-line-after.png" %}
+{% set beforeAlt = "overgrown fence line before clearing" %}
+{% set afterAlt = "opened fence line after clearing" %}
+
+<section id="sbs-2295" class="cs-white-background">
     <div class="cs-container">
-        <!-- Left Image Section -->
-        <div class="cs-image-group">
-            <picture class="cs-picture cs-picture1">
-                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
-                <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
-                <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl '/assets/images/stock/pexels-leiliane-dutra-1841922-12921056.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" alt="{{ title | replace(' | Flannel Landworks', '') }} equipment clearing dense brush" width="522" height="581" loading="lazy" decoding="async">
-            </picture>
-            <picture class="cs-picture cs-picture2">
-                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/farm-before-after-4-fenceline.png' | resize({ width: 390, height: 376 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/farm-before-after-4-fenceline.png' | resize({ width: 390, height: 376 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/farm-before-after-4-fenceline.png' | resize({ width: 390, height: 376 }) | jpeg %}" type="image/jpeg">
-                <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/owned/farm-before-after-4-fenceline.png' | resize({ width: 390, height: 376 }) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/owned/farm-before-after-4-fenceline.png' | resize({ width: 390, height: 376 }) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/owned/farm-before-after-4-fenceline.png' | resize({ width: 390, height: 376 }) | jpeg %}" type="image/jpeg">
-                <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/owned/farm-before-after-4-fenceline.png' | resize({ width: 390, height: 376 }) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/owned/farm-before-after-4-fenceline.png' | resize({ width: 390, height: 376 }) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/owned/farm-before-after-4-fenceline.png' | resize({ width: 390, height: 376 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl '/assets/images/owned/farm-before-after-4-fenceline.png' | resize({ width: 390, height: 376 }) | jpeg %}" alt="before and after fence line clearing" width="390" height="376" loading="lazy" decoding="async">
-            </picture>
-        </div>
+        {% include "components/before-after-image-group.html" %}
         <!-- Right Content Section-->
         <div class="cs-content">
             <span class="cs-topper">Fence Line Clearing</span>

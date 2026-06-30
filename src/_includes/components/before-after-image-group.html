@@ -1,0 +1,27 @@
+<div class="cs-image-group">
+    <div class="cs-picture-wrapper1">
+        <picture class="cs-picture cs-picture1">
+            <source media="(max-width: 600px)" srcset="{% getUrl beforeImage | resize({ width: 412, height: 457 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl beforeImage | resize({ width: 412, height: 457 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl beforeImage | resize({ width: 412, height: 457 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 601px)" srcset="{% getUrl beforeImage | resize({ width: 412, height: 457 }) | avif %}" type="image/avif">
+            <source media="(min-width: 601px)" srcset="{% getUrl beforeImage | resize({ width: 412, height: 457 }) | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl beforeImage | resize({ width: 412, height: 457 }) | jpeg %}" type="image/jpeg">
+            <img loading="lazy" decoding="async" src="{% getUrl beforeImage | resize({ width: 412, height: 457 }) | jpeg %}" alt="{{ beforeAlt }}" width="412" height="457">
+        </picture>
+        <span class="cs-tag">Before</span>
+    </div>
+    <div class="cs-picture-wrapper2">
+        <picture class="cs-picture cs-picture2">
+            <source media="(max-width: 600px)" srcset="{% getUrl afterImage | resize({ width: 413, height: 474 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl afterImage | resize({ width: 413, height: 474 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl afterImage | resize({ width: 413, height: 474 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 601px)" srcset="{% getUrl afterImage | resize({ width: 413, height: 474 }) | avif %}" type="image/avif">
+            <source media="(min-width: 601px)" srcset="{% getUrl afterImage | resize({ width: 413, height: 474 }) | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl afterImage | resize({ width: 413, height: 474 }) | jpeg %}" type="image/jpeg">
+            <img loading="lazy" decoding="async" src="{% getUrl afterImage | resize({ width: 413, height: 474 }) | jpeg %}" alt="{{ afterAlt }}" width="413" height="474">
+        </picture>
+        <span class="cs-tag">After</span>
+    </div>
+    <img class="cs-arrow" loading="lazy" decoding="async" src="/assets/images/owned/before-after-arrow.svg" alt="" width="148" height="54">
+</div>
