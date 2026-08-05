@@ -2,8 +2,8 @@ module.exports = {
     name: "Flannel Landworks",
     owner: "Mark Gaulden",
     email: "mark@flannellandworks.com",
-    phoneForTel: "6363453724",
-    phoneFormatted: "(636) 345-3724",
+    phoneForTel: "6364668887",
+    phoneFormatted: "(636) 466-8887",
     socials: {
         google: "https://share.google/rubBwCP3rOnGXEmMX",
         facebook: "https://www.facebook.com/p/Flannel-Landworks-61582936221785/",
