@@ -66,6 +66,11 @@
                         </ul>
                     </li>
                     <li class="cs-li">
+                        <a href="/projects/" class="cs-li-link {% if page.url == "/projects/" %} cs-active {% endif %}" {% if page.url == "/projects/" %} aria-current="page" {% endif %}>
+                            Projects
+                        </a>
+                    </li>
+                    <li class="cs-li">
                         <a href="/blog/" class="cs-li-link {% if page.url == "/blog/" or page.url.slice(0, 6) == "/blog/" %} cs-active {% endif %}" {% if page.url == "/blog/" or page.url.slice(0, 6) == "/blog/" %} aria-current="page" {% endif %}>
                             Blog
                         </a>

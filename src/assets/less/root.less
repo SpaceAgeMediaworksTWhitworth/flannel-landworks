@@ -1926,7 +1926,8 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-	#sbs-2295 {
+	#sbs-2295,
+	.sbs-2295 {
 		padding: var(--sectionPadding);
 		background-color: #f7f7f7;
 		overflow: hidden;
@@ -2052,7 +2053,8 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-	#sbs-2295 {
+	#sbs-2295,
+	.sbs-2295 {
 		.cs-container {
 			max-width: (1280/16rem);
 		}
@@ -2065,10 +2067,18 @@
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-	#sbs-2295 {
+	#sbs-2295,
+	.sbs-2295 {
 		.cs-container {
 			flex-direction: row;
 			align-items: center;
+		}
+
+		/* Reusable mirrored layout: content left, before/after images right */
+		&.cs-reverse {
+			.cs-container {
+				flex-direction: row-reverse;
+			}
 		}
 
 		.cs-image-group {

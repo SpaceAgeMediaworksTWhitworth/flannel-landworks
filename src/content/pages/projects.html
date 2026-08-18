@@ -1,0 +1,200 @@
+---
+title: "Land Clearing Projects | Flannel Landworks"
+description: "See before-and-after land clearing and forestry mulching projects completed by Flannel Landworks for residential acreage owners."
+permalink: "/projects/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl '/assets/images/before-after/gary-after-bottom-hill.jpg' | resize({ width: 640, height: 600 }) | avif %}" type="image/avif" media="(max-width: 600px)">
+    <link rel="preload" as="image" href="{% getUrl '/assets/images/before-after/gary-after-bottom-hill.jpg' | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif" media="(min-width: 601px) and (max-width: 1023px)">
+    <link rel="preload" as="image" href="{% getUrl '/assets/images/before-after/gary-after-bottom-hill.jpg' | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif" media="(min-width: 1024px)">
+    <link rel="stylesheet" href="/assets/css/projects.css">
+{% endblock %}
+
+{% block body %}
+    <div id="banner-310">
+        <div class="cs-container">
+            <h1 class="cs-int-title">Land Clearing Projects</h1>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/projects/" class="cs-link cs-active" aria-current="page">Projects</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/before-after/gary-after-bottom-hill.jpg' | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/before-after/gary-after-bottom-hill.jpg' | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/before-after/gary-after-bottom-hill.jpg' | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/before-after/gary-after-bottom-hill.jpg' | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/before-after/gary-after-bottom-hill.jpg' | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/before-after/gary-after-bottom-hill.jpg' | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <img src="{% getUrl '/assets/images/before-after/gary-after-bottom-hill.jpg' | resize({ width: 2500, height: 628 }) | jpeg %}" alt="cleared wooded acreage after forestry mulching" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <section id="projects-intro">
+        <div class="cs-container">
+            <span class="cs-topper">Real Before And Afters</span>
+            <h2 class="cs-title">Picture What Your Property Could Become</h2>
+            <p class="cs-text">It can be hard to imagine what is hiding behind years of brush and overgrowth. These are real properties where clearing opened up the view, made getting around easier, and gave the owners more usable land.</p>
+        </div>
+    </section>
+
+    {% set beforeImage = '/assets/images/before-after/gary-before2.jpg' %}
+    {% set afterImage = '/assets/images/before-after/gary-after-2.jpg' %}
+    {% set beforeAlt = 'dense undergrowth on wooded acreage before clearing' %}
+    {% set afterAlt = 'open wooded hillside after brush and understory clearing' %}
+    <section id="gary-project" class="sbs-2295">
+        <div class="cs-container">
+            {% include "components/before-after-image-group.html" %}
+            <div class="cs-content">
+                <span class="cs-topper">Wooded Hillside</span>
+                <h2 class="cs-title">The Trees Were Worth Keeping. The Tangle Wasn't.</h2>
+                <p class="cs-text">This hillside had plenty of beautiful mature trees, but the thick growth underneath made it hard to see through or take care of. Once that tangle was cleared, the woods felt open again without losing the canopy that made the property special.</p>
+                <a href="/contact/" class="cs-button-solid">Plan Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-gallery" aria-labelledby="hillside-gallery-title">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Finished Property</span>
+                <h2 class="cs-title" id="hillside-gallery-title">A Hillside You Can See And Walk Through Again</h2>
+                <p class="cs-text">From top to bottom, the finished hillside feels like part of the property again instead of a place to avoid.</p>
+            </div>
+            <div class="cs-gallery-grid">
+                {% for image in [
+                    { src: '/assets/images/before-after/gary-after-5.jpg', alt: 'cleared ground beneath mature trees' },
+                    { src: '/assets/images/before-after/gary-after-7.jpg', alt: 'open view across a cleared wooded slope' },
+                    { src: '/assets/images/before-after/gary-after-bottom-hill.jpg', alt: 'finished clearing viewed from the bottom of the hill' }
+                ] %}
+                    <picture class="cs-picture">
+                        <source srcset="{% getUrl image.src | resize({ width: 800, height: 600 }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl image.src | resize({ width: 800, height: 600 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl image.src | resize({ width: 800, height: 600 }) | jpeg %}" alt="{{ image.alt }}" width="800" height="600" loading="lazy" decoding="async">
+                    </picture>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-video cs-white-background" aria-labelledby="cedar-video-title">
+        <div class="cs-container">
+            <div class="cs-video-wrapper">
+                <video class="cs-video" controls preload="none" playsinline poster="{% getUrl '/assets/images/before-after/cedar-clearing-video-poster.jpg' | resize({ width: 1280, height: 720 }) | jpeg %}" aria-label="Excavator clearing a large cedar and woody debris">
+                    <source src="/assets/images/before-after/cedar-clearing-web.m4v" type="video/mp4">
+                    Your browser does not support embedded video.
+                </video>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">A Look At The Process</span>
+                <h2 class="cs-title" id="cedar-video-title">Making Room In Thick Cedar</h2>
+                <p class="cs-text">This is what it looks like when a crowded patch of cedar and old woody debris starts opening up. Even in tight ground, the change begins to take shape quickly.</p>
+            </div>
+        </div>
+    </section>
+
+    {% set beforeImage = '/assets/images/before-after/greg-before-1.jpg' %}
+    {% set afterImage = '/assets/images/before-after/greg-after-1.jpg' %}
+    {% set beforeAlt = 'overgrown pond edge before clearing' %}
+    {% set afterAlt = 'cleared access alongside a pond' %}
+    <section id="greg-project-one" class="sbs-2295 cs-reverse">
+        <div class="cs-container">
+            {% include "components/before-after-image-group.html" %}
+            <div class="cs-content">
+                <span class="cs-topper">Along The Pond</span>
+                <h2 class="cs-title">Making The Water's Edge Feel Like Part Of The Property</h2>
+                <p class="cs-text">The pond was there, but the overgrowth made it difficult to reach and enjoy. Clearing a path along the edge brought the water back into view and made the shoreline inviting again.</p>
+            </div>
+        </div>
+    </section>
+
+    {# These two source filenames are reversed; their displayed roles follow the visible work. #}
+    {% set beforeImage = '/assets/images/before-after/greg-after-2.jpg' %}
+    {% set afterImage = '/assets/images/before-after/greg-before-2.jpg' %}
+    {% set beforeAlt = 'dense brush before vegetation clearing' %}
+    {% set afterAlt = 'open acreage after vegetation clearing' %}
+    <section id="greg-project-two" class="sbs-2295 cs-white-background">
+        <div class="cs-container">
+            {% include "components/before-after-image-group.html" %}
+            <div class="cs-content">
+                <span class="cs-topper">Along The Property Edge</span>
+                <h2 class="cs-title">Getting Back The Ground Hidden By Brush</h2>
+                <p class="cs-text">What looked like a wall of brush was usable ground waiting to be uncovered. With the woody growth gone, the edge feels wider, cleaner, and much easier to keep up with.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-video cs-reverse" aria-labelledby="tree-video-title">
+        <div class="cs-container">
+            <div class="cs-video-wrapper">
+                <video class="cs-video" controls preload="none" playsinline poster="{% getUrl '/assets/images/before-after/tree-clearing-video-poster.jpg' | resize({ width: 1280, height: 720 }) | jpeg %}" aria-label="Forestry mulching equipment bringing down a tree along a wooded property edge">
+                    <source src="/assets/images/before-after/tree-clearing-web.m4v" type="video/mp4">
+                    Your browser does not support embedded video.
+                </video>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">From The Job</span>
+                <h2 class="cs-title" id="tree-video-title">Opening The Woods Beyond The Yard</h2>
+                <p class="cs-text">When trees and brush begin creeping into the yard, the usable part of a property can slowly shrink. Here is a closer look at how we start taking that space back.</p>
+            </div>
+        </div>
+    </section>
+
+    {% set beforeImage = '/assets/images/before-after/greg-before-3.jpg' %}
+    {% set afterImage = '/assets/images/before-after/greg-after-3.jpg' %}
+    {% set beforeAlt = 'brush and woody growth across open acreage before clearing' %}
+    {% set afterAlt = 'open acreage after brush clearing' %}
+    <section id="greg-project-three" class="sbs-2295 cs-reverse">
+        <div class="cs-container">
+            {% include "components/before-after-image-group.html" %}
+            <div class="cs-content">
+                <span class="cs-topper">A Way Through The Acreage</span>
+                <h2 class="cs-title">Turning A Thicket Into A Clear Way Through</h2>
+                <p class="cs-text">Dense growth had closed off this part of the property. Clearing around the mature trees made the route easy to see and gave the owners a practical way to move through the acreage again.</p>
+            </div>
+        </div>
+    </section>
+
+    {% set beforeImage = '/assets/images/before-after/greg-before-4.jpg' %}
+    {% set afterImage = '/assets/images/before-after/greg-after-4.jpg' %}
+    {% set beforeAlt = 'thick understory beneath mature trees before clearing' %}
+    {% set afterAlt = 'open ground beneath mature trees after clearing' %}
+    <section id="greg-project-four" class="sbs-2295 cs-white-background">
+        <div class="cs-container">
+            {% include "components/before-after-image-group.html" %}
+            <div class="cs-content">
+                <span class="cs-topper">Beneath The Mature Trees</span>
+                <h2 class="cs-title">Keeping The Woods, Losing The Overgrowth</h2>
+                <p class="cs-text">The goal here wasn't to clear everything. It was to keep the mature trees people love and remove the growth that kept them from enjoying the space underneath.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-gallery cs-gray-background" aria-labelledby="woodland-gallery-title">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Finished Property</span>
+                <h2 class="cs-title" id="woodland-gallery-title">The Difference Across The Whole Property</h2>
+                <p class="cs-text">Once the separate areas were opened up, the property began to feel connected instead of broken into pockets by brush.</p>
+            </div>
+            <div class="cs-gallery-grid">
+                {% for image in [
+                    { src: '/assets/images/before-after/greg-after-5.jpg', alt: 'cleared wooded acreage with open sightlines' },
+                    { src: '/assets/images/before-after/greg-after-6.jpg', alt: 'finished clearing between mature trees' },
+                    { src: '/assets/images/before-after/greg-after-7.jpg', alt: 'open ground across the finished property' }
+                ] %}
+                    <picture class="cs-picture">
+                        <source srcset="{% getUrl image.src | resize({ width: 800, height: 600 }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl image.src | resize({ width: 800, height: 600 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl image.src | resize({ width: 800, height: 600 }) | jpeg %}" alt="{{ image.alt }}" width="800" height="600" loading="lazy" decoding="async">
+                    </picture>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+{% endblock %}
