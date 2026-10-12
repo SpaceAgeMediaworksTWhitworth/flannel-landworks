@@ -17,17 +17,22 @@ permalink: "/trail-clearing/"
     {% set serviceUrl = "/trail-clearing/" %}
     {% include "components/service-placeholder.html" %}
 <!-- ============================================ -->
-<!--              Before And After                -->
+<!--                 Trail Photo                  -->
 <!-- ============================================ -->
-
-{% set beforeImage = "/assets/images/new/wiley-before-2.png" %}
-{% set afterImage = "/assets/images/new/wiley-after-2.png" %}
-{% set beforeAlt = "overgrown trail route before clearing" %}
-{% set afterAlt = "opened trail route after clearing" %}
 
 <section id="sbs-2295" class="cs-white-background">
     <div class="cs-container">
-        {% include "components/before-after-image-group.html" %}
+        <div class="cs-image-group cs-single">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/making-trails.jpg' | resize({ width: 460, height: 578 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/making-trails.jpg' | resize({ width: 460, height: 578 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/making-trails.jpg' | resize({ width: 460, height: 578 }) | jpeg %}" type="image/jpeg">
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/making-trails.jpg' | resize({ width: 460, height: 578 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/making-trails.jpg' | resize({ width: 460, height: 578 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/making-trails.jpg' | resize({ width: 460, height: 578 }) | jpeg %}" type="image/jpeg">
+                <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/owned/making-trails.jpg' | resize({ width: 460, height: 578 }) | jpeg %}" alt="mulched walking trail cut through wooded acreage" width="460" height="578">
+            </picture>
+        </div>
         <!-- Right Content Section-->
         <div class="cs-content">
             <span class="cs-topper">Trail Clearing</span>

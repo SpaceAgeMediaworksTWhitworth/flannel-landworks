@@ -34,7 +34,7 @@
                     <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                     <!-- Note: When copying this dropdown, update the id attribute with an appropriate name (e.g., "services-dropdown-toggle", "products-dropdown-toggle") and ensure the aria-labelledby attribute on the ul matches the button's id -->
                     <li class="cs-li cs-dropdown">
-                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/forestry-mulching/" or page.url == "/land-clearing/" or page.url == "/brush-clearing/" or page.url == "/trail-clearing/" or page.url == "/fence-line-clearing/" or page.url == "/field-reclamation/" or page.url == "/food-plot-prep/" or page.url == "/crp-field-compliance/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="services-dropdown-toggle">
+                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/forestry-mulching/" or page.url == "/land-clearing/" or page.url == "/brush-clearing/" or page.url == "/trail-clearing/" or page.url == "/fence-line-clearing/" or page.url == "/field-reclamation/" or page.url == "/brush-hogging/" or page.url == "/food-plot-prep/" or page.url == "/crp-field-compliance/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="services-dropdown-toggle">
                             Services
                             <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
                         </button>
@@ -56,6 +56,9 @@
                             </li>
                             <li class="cs-drop-li">
                                 <a href="/field-reclamation/" class="cs-li-link cs-drop-link" {% if page.url == "/field-reclamation/" %} aria-current="page" {% endif %}>Field Reclamation</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/brush-hogging/" class="cs-li-link cs-drop-link" {% if page.url == "/brush-hogging/" %} aria-current="page" {% endif %}>Brush Hogging</a>
                             </li>
                             <li class="cs-drop-li">
                                 <a href="/food-plot-prep/" class="cs-li-link cs-drop-link" {% if page.url == "/food-plot-prep/" %} aria-current="page" {% endif %}>Food Plot Prep</a>

@@ -23,6 +23,7 @@ module.exports = {
         "Trail Clearing",
         "Fence Line Clearing",
         "Field Reclamation",
+        "Brush Hogging",
         "Food Plot Prep",
         "CRP Field Compliance",
     ],

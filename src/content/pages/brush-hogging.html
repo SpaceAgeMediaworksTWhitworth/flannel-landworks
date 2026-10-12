@@ -1,0 +1,92 @@
+---
+title: "Brush Hogging For Pastures & Fields | Flannel Landworks"
+description: "Brush hogging for pastures, fields, and overgrown land with few saplings. Heavy-duty vegetation control that keeps open ground from turning into woods."
+permalink: "/brush-hogging/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/new/Snapshot.PNG" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif" media="(max-width: 600px)">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/new/Snapshot.PNG" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif" media="(min-width: 601px) and (max-width: 1023px)">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/new/Snapshot.PNG" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif" media="(min-width: 1024px)">
+{% endblock %}
+
+{% block body %}
+    {% set serviceTitle = "Brush Hogging" %}
+    {% set serviceUrl = "/brush-hogging/" %}
+    {% include "components/service-placeholder.html" %}
+<!-- ============================================ -->
+<!--              Before And After                -->
+<!-- ============================================ -->
+
+{% set beforeImage = "/assets/images/owned/brush-hogging-before.jpg" %}
+{% set afterImage = "/assets/images/owned/brush-hogging-after.jpg" %}
+{% set beforeAlt = "tall grass and weeds in a field before brush hogging" %}
+{% set afterAlt = "field cut low and opened up after brush hogging" %}
+
+<section id="sbs-2295" class="cs-white-background">
+    <div class="cs-container">
+        {% include "components/before-after-image-group.html" %}
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Brush Hogging</span>
+            <h2 class="cs-title">
+                Heavy-Duty Mowing For Pastures And Fields
+            </h2>
+            <p class="cs-text">
+                Brush hogging is heavy-duty vegetation control for pastures, fields, and overgrown land where there are few saplings. It cuts down tall grass, weeds, and light brush that a regular mower can't handle.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get A Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="RPsbsr-313">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 522, height: 581 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 522, height: 581 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl '/assets/images/owned/heavy-machinery-2-normalized.jpg' | resize({ width: 522, height: 581 }) | jpeg %}" alt="Flannel Landworks equipment ready for field work" width="522" height="581" loading="lazy" decoding="async">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/work-truck-with-logo-magnet.jpeg' | resize({ width: 390, height: 376 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/work-truck-with-logo-magnet.jpeg' | resize({ width: 390, height: 376 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/owned/work-truck-with-logo-magnet.jpeg' | resize({ width: 390, height: 376 }) | jpeg %}" type="image/jpeg">
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/work-truck-with-logo-magnet.jpeg' | resize({ width: 390, height: 376 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/work-truck-with-logo-magnet.jpeg' | resize({ width: 390, height: 376 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/owned/work-truck-with-logo-magnet.jpeg' | resize({ width: 390, height: 376 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl '/assets/images/owned/work-truck-with-logo-magnet.jpeg' | resize({ width: 390, height: 376 }) | jpeg %}" alt="Flannel Landworks work truck" width="390" height="376" loading="lazy" decoding="async">
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Keep Open Ground Open</span>
+            <h2 class="cs-title">
+                Stop Pastures From Turning Into Forests
+            </h2>
+            <p class="cs-text">
+                Left alone, a pasture fills in fast. Grass and weeds come first, then brush, then saplings. In a few years, open ground starts turning back into woods.
+            </p>
+            <p class="cs-text">
+                We recommend brush hogging 1 to 2 times per year. Regular cuts keep your pasture or field open, easy to walk, and ready to use.
+            </p>
+            <p class="cs-text">
+                If saplings and thick brush have already moved in, forestry mulching or field reclamation may be the better first step. We'll tell you which one your land needs when we quote it.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get A Free Quote</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
